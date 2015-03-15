@@ -1,7 +1,5 @@
 ![JamesoOrJamie Logo](http://jamesorjamie.com/gray_logo.png)
 
-
-
 # Social Share jQuery Plugin
 
 ### HTML Markup
