@@ -1,0 +1,33 @@
+//colors
+$white: white;
+$color_azure_approx: #3b5998;
+$color_cinnabar_approx: #e34429;
+$color_turquoise_blue_approx: #6cdfea;
+$color_crimson_approx: #d1152e;
+
+i {
+  &.fa-facebook {
+    background: $color_azure_approx;
+  }
+  &.fa-google-plus {
+    background: $color_cinnabar_approx;
+  }
+  &.fa-twitter {
+    background: $color_turquoise_blue_approx;
+  }
+  &.fa-pinterest {
+    background: $color_crimson_approx;
+  }
+}
+
+.share i {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  color: $white;
+  padding-top: 10px;
+  cursor: pointer;
+}
