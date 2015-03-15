@@ -1,5 +1,7 @@
 ![JamesoOrJamie Logo](http://jamesorjamie.com/gray_logo.png)
 
+
+
 # Social Share jQuery Plugin
 
 ### HTML Markup
@@ -14,4 +16,8 @@
 ### Usage
 
 `$('.share').socialSharer();`
+
+### Demo
+
+<http://jamesorjamie.com/socialshare>
         
