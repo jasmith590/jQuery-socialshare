@@ -248,7 +248,3 @@
     };
 
 })(jQuery, window, document);
-
-jQuery(document).ready(function($){
-    $('.share').socialSharer({debug: false});
-});
