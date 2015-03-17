@@ -77,6 +77,9 @@
             $(document).on('click:socialcon:button', this.triggerButton.bind(this));
         },
 
+        /**
+         * Sets up the share button events and triggers
+         */
         setupInstance : function() {
             var self = this;
             if(this.element.childElementCount > 0){
@@ -114,17 +117,20 @@
         },
 
         triggerButton : function(event, ele){
+            // If already active, hide the sharecons
             if(!this.$element.hasClass('invisible')){
                 return this.$element.addClass('invisible');
             }
 
             this.$element.removeClass('invisible').addClass('animated bounceIn');
-
             this.$element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
                 $(this).removeClass('animated bounceIn');
             });
         },
 
+        /**
+         * Triggers the sharing modal based on button click.
+         */
         triggerSharing : function(event, ele) {
             var network = ele.data('network');
 
