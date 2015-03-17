@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Social Share jQuery Plugin Example</title>
-    <link href='http://fonts.googleapis.com/css?family=Overlock:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome.css">
     <link rel="stylesheet" href="style.css">
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>

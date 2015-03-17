@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'bebas_neuebold';
     src: url('./fonts/BebasNeue Bold-webfont.eot');
-    src: url('/fonts/BebasNeue Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/BebasNeue Bold-webfont.woff2') format('woff2'),
-    url('/fonts/BebasNeue Bold-webfont.woff') format('woff'),
-    url('/fonts/BebasNeue Bold-webfont.ttf') format('truetype'),
-    url('/fonts/BebasNeue Bold-webfont.svg#bebas_neuebold') format('svg');
+    src: url('./fonts/BebasNeue Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/BebasNeue Bold-webfont.woff2') format('woff2'),
+    url('./fonts/BebasNeue Bold-webfont.woff') format('woff'),
+    url('./fonts/BebasNeue Bold-webfont.ttf') format('truetype'),
+    url('./fonts/BebasNeue Bold-webfont.svg#bebas_neuebold') format('svg');
     font-weight: normal;
     font-style: normal;
 
