@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="share something">
+    <div class="share">
         <i class="fa fa-facebook" data-network="facebook"></i>
         <i class="fa fa-google-plus" data-network="google_plus"></i>
         <i class="fa fa-twitter" data-network="twitter"></i>
