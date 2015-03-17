@@ -9,13 +9,13 @@
     <script src="jquery.socialshare.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($){
-            $('.share').socialSharer({debug: false});
+            $('.share').socialSharer({debug: false, oneButton: true});
         });
     </script>
 </head>
 
 <body>
-    <div class="share">
+    <div class="share something">
         <i class="fa fa-facebook" data-network="facebook"></i>
         <i class="fa fa-google-plus" data-network="google_plus"></i>
         <i class="fa fa-twitter" data-network="twitter"></i>

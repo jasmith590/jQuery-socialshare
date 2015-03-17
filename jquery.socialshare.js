@@ -5,9 +5,11 @@
     // The actual plugin constructor
     function SocialSharer(element, options) {
         this.element = element;
+        this.$element = $(this.element);
         this.defaults = {
             debug: false,
             success: false,
+            oneButton : false,
             url: document.URL,
             networks: {
                 google_plus: {
@@ -55,6 +57,12 @@
         init: function(options) {
             // Overrides the default settings
             this.overrideDefaults(options);
+
+            // If one button setting is true. Set it up
+            if(this.options.oneButton === true){
+                this.oneButtonSetup();
+            }
+
             this.initObservers();
             this.setupInstance();
 
@@ -66,6 +74,7 @@
 
         initObservers : function() {
             $(document).on('click:socialcon', this.triggerSharing.bind(this));
+            $(document).on('click:socialcon:button', this.triggerButton.bind(this));
         },
 
         setupInstance : function() {
@@ -88,6 +97,32 @@
                     });
                 });
             }
+        },
+
+        oneButtonSetup : function(){
+            if(this.element.childElementCount > 0){
+                var buttonHTML = '<button class="' + this.element.className + '">Share</button>';
+                var button = $(buttonHTML).insertAfter(this.element).addClass('sharecon-button');
+
+                this.$element.addClass('invisible');
+
+                // Setup Click Event
+                button.on('click', function(){
+                    $(document).trigger('click:socialcon:button', [$(this)]);
+                });
+            }
+        },
+
+        triggerButton : function(event, ele){
+            if(!this.$element.hasClass('invisible')){
+                return this.$element.addClass('invisible');
+            }
+
+            this.$element.removeClass('invisible').addClass('animated bounceIn');
+
+            this.$element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(this).removeClass('animated bounceIn');
+            });
         },
 
         triggerSharing : function(event, ele) {
