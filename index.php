@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Social Share jQuery Plugin Example</title>
+    <title>Social Share jQuery Plugin</title>
     <link rel="stylesheet" href="font-awesome.css">
     <link rel="stylesheet" href="style.css">
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
