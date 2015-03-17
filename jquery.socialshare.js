@@ -180,8 +180,8 @@
         },
 
         /**
-         * Popup generator. Lets you supply and url and parameters to
-         * the URL. Will be positions to middle of window based on calculations
+         * Popup generator. Lets you supply a url and parameters to
+         * the URL. Will be positioned to middle of window based on calculations
          * taken from page load.
          *
          * @params url
